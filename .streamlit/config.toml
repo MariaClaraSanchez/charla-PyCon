@@ -1,0 +1,42 @@
+[theme]
+base = "light"
+
+# Colores de Python: azul como color principal, amarillo como acento.
+# Fondo y superficies en grises neutros para que solo destaquen ellos.
+primaryColor = "#3776AB"
+backgroundColor = "#F5F5F3"
+secondaryBackgroundColor = "#EAEAE6"
+textColor = "#1F2328"
+borderColor = "#D9D9D4"
+linkColor = "#3776AB"
+blueColor = "#3776AB"
+yellowColor = "#FFD43B"
+yellowBackgroundColor = "#FFE873"
+yellowTextColor = "#8A6A00"
+
+# Tipografía (Google Fonts): títulos con personalidad, código legible
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+headingFont = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap, sans-serif"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap, monospace"
+headingFontWeights = [700, 700, 600, 600, 600, 600]
+metricValueFontWeight = 700
+
+# Formas
+baseRadius = "large"
+buttonRadius = "full"
+showWidgetBorder = true
+codeBackgroundColor = "#EDEDEA"
+dataframeHeaderBackgroundColor = "#EAEAE6"
+
+# Paleta de los gráficos: azul y amarillo Python
+chartCategoricalColors = ["#3776AB", "#FFD43B", "#1E3A54", "#7FA7CE", "#E0A800", "#9DB4C8", "#5B8DB8", "#B8860B", "#4A6378"]
+
+# Barra lateral en azul oscuro, con amarillo como acento
+[theme.sidebar]
+backgroundColor = "#1E3A54"
+secondaryBackgroundColor = "#2A4D6E"
+textColor = "#F3F7FB"
+primaryColor = "#FFD43B"
+borderColor = "#3A6186"
+codeBackgroundColor = "#2A4D6E"
+linkColor = "#FFD43B"

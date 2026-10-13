@@ -1,0 +1,31 @@
+/*
+ * Animaciones de la presentación.
+ * Solo afectan al contenedor del slide (st-key-slide-*): el Panel no usa CSS.
+ */
+
+@keyframes entrar {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Cada slide entra en cascada, un elemento tras otro */
+[class*="st-key-slide-"] > *,
+[class*="st-key-paso-"] > * {
+  animation: entrar 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+[class*="st-key-slide-"] > :nth-child(2),  [class*="st-key-paso-"] > :nth-child(2)  { animation-delay: 0.08s; }
+[class*="st-key-slide-"] > :nth-child(3),  [class*="st-key-paso-"] > :nth-child(3)  { animation-delay: 0.16s; }
+[class*="st-key-slide-"] > :nth-child(4),  [class*="st-key-paso-"] > :nth-child(4)  { animation-delay: 0.24s; }
+[class*="st-key-slide-"] > :nth-child(5),  [class*="st-key-paso-"] > :nth-child(5)  { animation-delay: 0.32s; }
+[class*="st-key-slide-"] > :nth-child(6),  [class*="st-key-paso-"] > :nth-child(6)  { animation-delay: 0.40s; }
+[class*="st-key-slide-"] > :nth-child(7),  [class*="st-key-paso-"] > :nth-child(7)  { animation-delay: 0.48s; }
+[class*="st-key-slide-"] > :nth-child(n+8), [class*="st-key-paso-"] > :nth-child(n+8) { animation-delay: 0.56s; }
+
+/* Respeta a quien pide menos movimiento en su sistema */
+@media (prefers-reduced-motion: reduce) {
+  [class*="st-key-slide-"] > *,
+  [class*="st-key-paso-"] > * {
+    animation: none;
+  }
+}
